@@ -85,6 +85,4 @@ input[type="submit"] {
   border-color: white;
   min-width: 300px;
   padding: 1% 1% 1% 1%;
-  position:relative;
-  bottom: 20%;
 }
