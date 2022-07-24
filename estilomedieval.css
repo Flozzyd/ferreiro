@@ -1,0 +1,144 @@
+@font-face{
+    font-family: sabbath;
+    src: url("https://www.tavernamedieval.com.br/fonts/Sabbath-Black.ttf");
+  }
+  @font-face{
+    font-family: stonehen;
+    src: url("https://www.tavernamedieval.com.br/fonts/stonehen.ttf");
+  }
+body{ 
+    font-family: 'Aclonica', sans-serif;
+    background-image: url("https://i0.wp.com/orbedosdragoes.com/wp-content/uploads/2015/01/crivon-anoes-forja-ferreiro.jpg?ssl=1");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#produtos {
+    background-image: url(imagens/fundo-produtos-taverna.png);
+    min-height: 100vh;
+    border-right: 20px;
+    border-left: 20px;
+}
+#bemvindo{
+    color:white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bemvindo h1{
+    font-size: 60px;
+    color:#800000;
+}
+#barradepesquisa{
+    position :fixed;
+    bottom: 0;
+    width: 100%;
+}
+.subtitulo{
+    font-size: 40px;
+    color:#EEDD82;
+}
+#produtos{
+    color: #6B4226;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    color: #ffffff;
+    background-color: #6B4226;
+}
+/*criar classe para comentarios em fundo marrom*/
+.descricao-do-titulo{
+    color:#EEDD82;
+}
+
+.descricao-dos-produtos {
+    color: #8B4513;
+
+}
+
+#espadas img{
+    width:30%;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    object-fit:cover;
+    margin-top:20px;
+    border-radius: 10px;
+}
+#escudos img{
+    width:30%;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    object-fit:cover;
+    margin-top:20px;
+    border-radius: 10px;
+}
+#armaduras img{
+    width:30%;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    object-fit:cover;
+    margin-top:20px;
+    border-radius: 10px;
+}
+@media (max-width: 800px) {
+    #espadas img {
+      width: 50%;
+    }
+  }
+  @media (max-width: 800px) {
+    #escudos img {
+      width: 50%;
+    }
+  }
+  @media (max-width: 800px) {
+    #armaduras img {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #espadas img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    #escudos img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    #armaduras img {
+      width: 100%;
+    }
+  }
+
+#rodape{
+    color: #ffffff;
+    text-align: center;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto 5em;
+  height: 5em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+  padding: 30px 10px 30px 10px;
+  position:relative;
+  bottom: 20%;
+}

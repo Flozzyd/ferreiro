@@ -2,62 +2,120 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilomedieval.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Taverna do Flozzyd</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- css exportado do bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilomedieval.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!--CSS FONTE DAS LETRAS GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+  <title>Forja do Flozzyd</title>
 </head>
+
 <body>
-    <h1>Taverna do Flozzyd</h1>
-    <p>Bem vindo a tavena do Flozzyd</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere earum adipisci quisquam, odit ad provident
-        dolore quia saepe accusamus consequuntur dolorem repellendus facilis fugit quidem tenetur culpa quos delectus
-        nostrum!</p>
-        <img src="https://i.pinimg.com/736x/aa/48/90/aa48906bbf92e476b7dfba0a473a27be.jpg" alt="imagem da taverna do flozzyd">
-    <!--inserir imagem com tematica mediaval para plano de fundo da capa-->
-    
-    <h2></h2>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <div id="bemvindo" class="container flex text-center justify-content-center">
+    <h1>Forja do Flozzyd</h1>
+    <p class="subtitulo">Bem vindo</p>
+    <p class="descricao-do-titulo">A Forja do Flozzyd agradece a visita, dê uma olhada em nossos produtos</p>
+    <a href="#produtos" type="button" class="btn btn-primary btn-sm">Nossos produtos</a>
+  </div>
+  <nav id="barradepesquisa" class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropup">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#espadas">Espadas</a></li>
+              <li><a class="dropdown-item" href="#escudos">Escudos</a></li>
+              <li><a class="dropdown-item" href="#armaduras">Armaduras</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
+              <li><a class="dropdown-item text-center text-danger" href="#produtos-personalizados">Produtos personalisados</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+          </li>
+          <li class="nav-item">
+            <a href="#rodape" class="nav-link">nosso contato aqui</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="produtos">
+      <p class="descricao-dos-produtos">Bem vindo a Forja do Flozzyd, aqui voce vai encontrar uam gama de produtos feitos a mão e utilizando materiais escolhidos a dedo pelo melhor ferreiro conhecido no mundo dos anões, dê uma olhada em nossos produtos já estilizados ou, sinta-se a vontade para solicitar uma mercadoria personalizada diretamente com nosso artesão.</p>
+      <p>É necessário frizar que nenhum dos nossos produtos são destinados ao combate e não incitamos violência. Estes produtos seguem com descrição do uso feito em combate relativos à sua respectiva época. Use com instrução de um profissional.</p>
+      <h2> Mercadorias</h2>
+      <div>
+        <div id="espadas">
+          <h3 class="text-center">Espadas</h3>
+          <ul>
+            <img src="imagens/espada-de-uma-mao.png" class="vitrine" alt="imagem de espada de uma mão">
+            <li>Espada de uma mão: </li>
+            <p>Espada leve que permite maior agilidade em combates corpo a corpo. Aconselhamos usar com escudo de madeira, possibilitando pequenas investidas fatais.</p>
+            <img src="imagens/espada-de-duas-maos.png" class="vitrine" alt="imagem de espada de duas mãos">
+            <li>Espada de duas mãos:</li>
+            <p>Peso relativamente alto, dependendo do material selecionado para a confecção do cabo e lâmina. Excelente para combates de média distância contra poucos inimigos.</p>
+            <img src="imagens/adaga.png" class="vitrine" alt="imagem de adaga">
+            <li>Adaga:</li>
+            <p>Arma letal a curto alcance e excelente para combates que necessitam mais destreza, furtividade e dricição</p>
+          </ul>
         </div>
-      </nav>
-    
+        <div id="escudos">
+          <h3 class="text-center">Escudos</h3>
+          <ul>
+            <img src="imagens/escudo.webp" class="vitrine" alt="escudo de madeira">
+            <li>Escudo de madeira:</li>
+            <p>Equipamento com pouca eficiencia contra armas muito pesdas, mas muito em combates de curto alcance, protegendo areas mais frágeis do corpo, possibilitando curtas investidas.</p>
+            <img src="imagens/escudo-de-ferro.jpg" class="vitrine" alt="escudo de ferro">
+            <li>Escudo de metal:</li>
+            <p>Equipamento pesado e excelente para proteção integral contra qualquer tipo de armamento, incluindo disparáveis, tais como flechas, necessita grande força para ser manuseado.</p>
+          </ul>
+        </div>
+        <div id="armaduras">
+          <h3 class="text-center">Armaduras</h3>
+          <ul>
+            <img src="imagens/malha-cota.jpg" class="vitrine" alt="armadura de malha">
+            <li>Armadura leve:</li>
+            <p>Malha cota, excelente para quem deseja maior liberdade durante os combates, mas pouco eficiente na proteção de dano, aconselhamos utilizar por baixo de uma armadura pesada</p>
+            <img src="imagens/armadura-ferro.jpg" class="vitrine" alt="armadura de ferro">
+            <li>Armadura Pesada</li>
+            <p>Armadura de proteção integral contra qualquer tipo de armamento, porém reduz, consideravelmente, a mobilidade.</p>
+          </ul>
+        </div>
+
+    </section>
+  </main>
 </body>
+<footer id="rodape">
+  <p>Para solicitar mais informações sobre nossos produtos ou, solicitar um produto personalido contacte-nos atraves do e-card abaixo ou via email: flozzyd@protonmail.com</p>
+  <form id="produtos-personalizados" action="submit">
+  <fieldset>
+    <label>
+      <textarea name="bio" rows="3" cols="30" placeholder="Faça uma descrição do produto personalizado desejado..."></textarea>
+          </label>
+  </fieldset>
+  <input type="submit" value="Submit" />
+</form>
+</footer>
 
 </html>
