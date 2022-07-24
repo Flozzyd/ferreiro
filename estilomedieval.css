@@ -14,9 +14,12 @@ body{
 }
 #produtos {
     background-image: url(imagens/fundo-produtos-taverna.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     border-right: 20px;
     border-left: 20px;
+    padding: 10%;
 }
 #bemvindo{
     color:white;
@@ -42,6 +45,13 @@ body{
     color: #6B4226;
 }
 
+#produtos img{
+  max-width: 600px;
+  width: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
 h2{
     text-align: center;
 }
@@ -60,85 +70,21 @@ h3{
 
 }
 
-#espadas img{
-    width:30%;
-    height:300px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    object-fit:cover;
-    margin-top:20px;
-    border-radius: 10px;
-}
-#escudos img{
-    width:30%;
-    height:300px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    object-fit:cover;
-    margin-top:20px;
-    border-radius: 10px;
-}
-#armaduras img{
-    width:30%;
-    height:300px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    object-fit:cover;
-    margin-top:20px;
-    border-radius: 10px;
-}
-@media (max-width: 800px) {
-    #espadas img {
-      width: 50%;
-    }
-  }
-  @media (max-width: 800px) {
-    #escudos img {
-      width: 50%;
-    }
-  }
-  @media (max-width: 800px) {
-    #armaduras img {
-      width: 50%;
-    }
-  }
-
-  @media (max-width: 600px) {
-    #espadas img {
-      width: 100%;
-    }
-  }
-  @media (max-width: 600px) {
-    #escudos img {
-      width: 100%;
-    }
-  }
-  @media (max-width: 600px) {
-    #armaduras img {
-      width: 100%;
-    }
-  }
-
 #rodape{
     color: #ffffff;
     text-align: center;
+    padding: 1%;
 }
 input[type="submit"] {
   display: block;
-  width: 60%;
+  width: 30%;
   margin: 1em auto 5em;
   height: 5em;
   font-size: 1.1rem;
   background-color: #3b3b4f;
   border-color: white;
   min-width: 300px;
-  padding: 30px 10px 30px 10px;
+  padding: 1% 1% 1% 1%;
   position:relative;
   bottom: 20%;
 }
